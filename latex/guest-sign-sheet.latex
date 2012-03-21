@@ -1,0 +1,35 @@
+\documentclass[11pt,letterpaper,oneside]{article}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{forloop}
+\usepackage{fullpage}
+\usepackage{setspace}
+\usepackage[pdftex,
+  pdfauthor={Trever Fischer},
+  pdftitle={SYNHAK Guest Sign-in}]{hyperref}
+\pagestyle{empty}
+\newcounter{row}
+
+\begin{document}
+\title{SYNHAK Guest Sign-in}
+\author{Trever Fischer}
+\date{\today}
+
+\begin{center}
+\includegraphics[width=8cm]{logo}\\[1cm]
+\rule{\linewidth}{0.5mm}
+
+\textsc{\Large SYNHAK Guest Sign-in}\\[1cm]
+
+
+\begin{doublespace}
+\begin{tabularx}{\textwidth}{ |X|X|X|X| }
+\hline
+Date & Name & Email & Emergency Phone \\ \hline
+\forloop{row}{1}{\value{row} < 15}{  &   &   &   \\ \hline }
+ & & & \\ \hline
+\end{tabularx}
+\end{doublespace}
+\end{center}
+
+\end{document}

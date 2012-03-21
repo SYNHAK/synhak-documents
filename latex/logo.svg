@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="158.8293"
+   height="64.840279"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="synhak.svg"
+   inkscape:export-filename="/tmp/synhak.png"
+   inkscape:export-xdpi="65.346375"
+   inkscape:export-ydpi="65.346375">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="8.3915658"
+     inkscape:cx="47.686648"
+     inkscape:cy="25.988287"
+     inkscape:document-units="px"
+     inkscape:current-layer="text2985"
+     showgrid="false"
+     inkscape:window-width="1024"
+     inkscape:window-height="675"
+     inkscape:window-x="-2"
+     inkscape:window-y="-3"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-59.280762,-277.85156)">
+    <g
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:BetecknaLowerCase;-inkscape-font-specification:BetecknaLowerCase Medium"
+       id="text2985">
+      <text
+         xml:space="preserve"
+         style="font-size:45.94163132px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:-1.78023803px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#f35900;fill-opacity:1;stroke:#f35900;stroke-opacity:1;font-family:Beteckna Small Caps;-inkscape-font-specification:Beteckna Small Caps Bold"
+         x="99.438522"
+         y="311.82294"
+         id="text3801"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3803"
+           x="98.548401"
+           y="311.82294"
+           dx="0 0 2.0151372">SYN</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:45.94163132px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:-1.54999995px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#0066d6;fill-opacity:1;stroke:#0066d6;stroke-opacity:1;font-family:Beteckna Small Caps;-inkscape-font-specification:Beteckna Small Caps Bold"
+         x="176.89447"
+         y="338.8317"
+         id="text3805"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3807"
+           x="176.11946"
+           y="338.8317">HAK</tspan></text>
+      <path
+         d="m 134.39443,342.69184 13.90276,-64.84028 -7.6699,0.0922 -14.43966,64.74805 8.2068,0"
+         id="path2996"
+         style="fill:#000000;fill-opacity:1"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+  </g>
+</svg>

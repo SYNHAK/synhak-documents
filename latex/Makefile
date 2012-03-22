@@ -1,14 +1,17 @@
-IMAGES = logo.svg
-DOCUMENTS = guest-sign-sheet.pdf
+IMAGES = images/logo.pdf
+DOCUMENTS = guest-sign-sheet.pdf waiver.pdf
 
-all: images documents
+all: $(DOCUMENTS)
 
-images: $(IMAGES)
+clean:
+	rm -f {,images/}*.pdf {,images/}*.log {,images/}*.out {,images/}*.aux
 
-documents: $(DOCUMENTS)
+$(DOCUMENTS): $(IMAGES)
 
 %.pdf: %.svg
 		inkscape -z -A $@ $<
 
 %.pdf: %.latex
 		pdflatex $<
+
+.PHONY: all clean

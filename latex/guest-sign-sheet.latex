@@ -16,7 +16,7 @@
 \date{\today}
 
 \begin{center}
-\includegraphics[width=8cm]{logo}\\[1cm]
+\includegraphics[width=8cm]{images/logo}\\[1cm]
 \rule{\linewidth}{0.5mm}
 
 \textsc{\Large SYNHAK Guest Sign-in}\\[1cm]

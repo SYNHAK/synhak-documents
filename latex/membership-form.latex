@@ -1,0 +1,56 @@
+\documentclass[11pt,letterpaper,oneside]{article}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{forloop}
+\usepackage{fullpage}
+\usepackage{setspace}
+\usepackage[pdftex,
+  pdfauthor={Trever Fischer},
+  pdftitle={SYNHAK Membership Application}]{hyperref}
+\pagestyle{empty}
+
+\begin{document}
+\title{SYNHAK Membership Application}
+\author{Trever Fischer}
+\date{\today}
+
+\begin{center}
+\includegraphics[width=8cm]{images/logo}\\[1cm]
+\rule{\linewidth}{0.5mm}
+
+\textsc{\Large SYNHAK Membership Application}\\[1cm]
+\end{center}
+
+\emph{Name:}
+\line(1,0){200}
+
+\emph{Why:}
+
+\begin{doublespace}
+\rule{\linewidth}{0.1mm}
+\rule{\linewidth}{0.1mm}
+\rule{\linewidth}{0.1mm}
+\rule{\linewidth}{0.1mm}
+\rule{\linewidth}{0.1mm}
+\end{doublespace}
+
+I, the unersigned, confirm that the information here is true and correct; and I
+promise to be excellent to people.
+
+\begin{center}
+\begin{tabularx}{\textwidth} { r l }
+\line(1,0){250} & \line(1,0){100} \\
+Signature & Date
+\end{tabularx}
+\end{center}
+\rule{\linewidth}{0.5mm}
+
+\emph{Sponsor 1:} \line(1,0){200}
+
+\emph{Contact information:} \line(1,0){200}
+
+\emph{Sponsor 2:} \line(1,0){200}
+
+\emph{Contact information:} \line(1,0){200}
+
+\end{document}

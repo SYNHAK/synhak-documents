@@ -1,0 +1,30 @@
+\documentclass[11pt,letterpaper,oneside]{article}
+\usepackage{graphicx}
+\usepackage[pdftex,
+  pdfauthor={Trever Fischer},
+  pdftitle={SYNHAK Liability Waiver}]{hyperref}
+\begin{document}
+\title{SYNHAK Space Rules}
+\date{\today}
+\begin{center}
+\includegraphics[width=8cm]{images/logo}\\[1cm]
+\rule{\linewidth}{0.5mm}
+
+\textsc{\Large SYNHAK Space Rules}\\[1cm]
+
+\end{center}
+
+\begin{Large}
+\begin{enumerate}
+\item Be excellent to each other.
+\item Always wear closed-toe shoes.
+\item Wear eye protection when appropriate.
+\item Keep things tidy.
+\item Put it back where you found it.
+\item If it is not yours, don't break it.
+\item If its broken, fix it.
+\item All visitors must sign the guestbook.
+\end{enumerate}
+\end{Large}
+
+\end{document}

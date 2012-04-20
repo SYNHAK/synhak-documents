@@ -1,5 +1,5 @@
 IMAGES = images/logo.pdf
-DOCUMENTS = guest-sign-sheet.pdf waiver.pdf membership-form.pdf
+DOCUMENTS = guest-sign-sheet.pdf waiver.pdf membership-form.pdf space-rules.pdf
 
 all: $(DOCUMENTS)
 

@@ -1,0 +1,27 @@
+\documentclass[11pt,letterpaper,oneside]{article}
+\usepackage{graphicx}
+\usepackage[pdftex,
+  pdfauthor={Trever Fischer},
+  pdftitle={SYNHAK Binder Cover}]{hyperref}
+\begin{document}
+\title{SYNHAK Binder Cover}
+\date{\today}
+\begin{center}
+\includegraphics[width=8cm]{images/logo}\\[1cm]
+\rule{\linewidth}{0.5mm}
+
+\textsc{\Large The SYNHAK Binder}\\[1cm]
+
+\end{center}
+
+\begin{Large}
+Contents:
+\begin{enumerate}
+\item Guest Sign-in
+\item Membership Applications
+\item Space Rules
+\item Bylaws
+\end{enumerate}
+\end{Large}
+
+\end{document}

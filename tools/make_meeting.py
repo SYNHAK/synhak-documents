@@ -1,13 +1,23 @@
 #!/usr/bin/env python
 from wikitools import *
+import sys
 import datetime
 import time
 import settings
 from Cheetah.Template import Template
 
-date = datetime.date(2012, 5, 15)
 site = wiki.Wiki("http://synhak.org/w/api.php")
 site.login(settings.botName, settings.botPassword)
+
+
+nextMeetingDate = map(int, page.Page(site, "Next Meeting", followRedir=False).getWikiText().split("/")[1].replace("]", "").split("-"))
+nextMeetingDate = datetime.date(nextMeetingDate[2], nextMeetingDate[1], nextMeetingDate[0])
+now = datetime.date.today()
+if now > nextMeetingDate:
+    date = nextMeetingDate+datetime.timedelta(days=7)
+else:
+    print "There is already a meeting scheduled for %s"%(nextMeetingDate)
+    sys.exit(0)
 
 meetingTemplateRaw = page.Page(site, "Meetings/Template")
 meetingTemplateContents = ""
@@ -32,10 +42,10 @@ lastMeetingPage = page.Page(site, "Last Meeting", followRedir=False)
 nextMeetingPage = page.Page(site, "Next Meeting", followRedir=False)
 
 print "Writing next meeting page"
-newMeetingPage.edit(summary="Created new meeting page", bot=True, text=unicode(meetingTemplate))
+#newMeetingPage.edit(summary="Created new meeting page", bot=True, text=unicode(meetingTemplate))
 
 print "Moving [[Next Meeting]] to [[Last Meeting]]"
-lastMeetingPage.edit(summary="Update previous meeting", bot=True, text=nextMeetingPage.getWikiText())
+#lastMeetingPage.edit(summary="Update previous meeting", bot=True, text=nextMeetingPage.getWikiText())
 
 print "Updating [[Next Meeting]]"
-nextMeetingPage.edit(summary="Update next meeting", bot=True, text="#Redirect [[%s]]"%(newMeetingTitle))
+#nextMeetingPage.edit(summary="Update next meeting", bot=True, text="#Redirect [[%s]]"%(newMeetingTitle))

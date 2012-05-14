@@ -49,6 +49,9 @@ Email & Phone Number
 \end{tabularx}
 \end{center}
 \rule{\linewidth}{0.5mm}
+\begin{center}
+\emph{Not to be filled out by the applicant}
+\end{center}
 
 \emph{Sponsor 1:} \line(1,0){200}
 

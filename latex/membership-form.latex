@@ -53,12 +53,12 @@ Email & Phone Number
 \emph{Not to be filled out by the applicant}
 \end{center}
 
-\emph{Sponsor 1:} \line(1,0){200}
+\emph{Sponsor 1 Signature:} \line(1,0){200} \\
+\emph{Phone/Email:} \line(1,0){200} \\
+\emph{Sponsor 2 Signature:} \line(1,0){200} \\
+\emph{Phone/Email:} \line(1,0){200} \\
 
-\emph{Contact information:} \line(1,0){200}
-
-\emph{Sponsor 2:} \line(1,0){200}
-
-\emph{Contact information:} \line(1,0){200}
+\rule{\linewidth}{0.5mm}
+\emph{Dues paid:} \$\line(1,0){50}, started on \line(1,0){60}\\
 
 \end{document}

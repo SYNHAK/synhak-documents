@@ -11,7 +11,7 @@ $(DOCUMENTS): $(IMAGES)
 %.pdf: %.svg
 		inkscape -z -A $@ $<
 
-%.pdf: %.latex %.version.latex
+%.pdf: %.latex %.version.latex synhak.cls
 		pdflatex $<
 
 %.version.latex: ../.git/logs/HEAD

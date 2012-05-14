@@ -1,18 +1,7 @@
-\documentclass[11pt,letterpaper,oneside]{article}
-\usepackage{graphicx}
-\usepackage[pdftex,
-  pdfauthor={Trever Fischer},
-  pdftitle={SYNHAK Liability Waiver}]{hyperref}
+\documentclass{synhak}
 \begin{document}
 \title{SYNHAK Space Rules}
-\date{\today}
-\begin{center}
-\includegraphics[width=8cm]{images/logo}\\[1cm]
-\rule{\linewidth}{0.5mm}
-
-\textsc{\Large SYNHAK Space Rules}\\[1cm]
-
-\end{center}
+\maketitle
 
 \begin{Large}
 \begin{enumerate}

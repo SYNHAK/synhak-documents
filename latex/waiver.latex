@@ -1,26 +1,12 @@
-\documentclass[11pt,letterpaper,oneside]{article}
-\usepackage{graphicx}
-\usepackage{tabularx}
-\usepackage{forloop}
-\usepackage{fullpage}
-\usepackage{setspace}
-\usepackage[pdftex,
-  pdfauthor={Trever Fischer},
-  pdftitle={SYNHAK Liability Waiver}]{hyperref}
+\documentclass[nologo]{synhak}
 \usepackage[compact]{titlesec}
 \titleformat{\section}{\small}{\thesection}{}{}
-%\titleformat{\section}{\small\emph}{\thesection}{1em}{}
-\pagestyle{empty}
 \newcounter{row}
 
 \begin{document}
-\title{SYNHAK Guest Sign-in}
-\author{Trever Fischer}
+\title{SYNHAK Liability Waiver}
 \date{\today}
-
-\begin{center}
-\textsc{\Large SYNHAK Liability Waiver}\\[1cm]
-\end{center}
+\maketitle
 
 \begin{footnotesize}
 \section*{Release of Liability}

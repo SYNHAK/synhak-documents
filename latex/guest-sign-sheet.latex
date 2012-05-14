@@ -1,27 +1,11 @@
-\documentclass[11pt,letterpaper,oneside]{article}
-\usepackage{graphicx}
-\usepackage{tabularx}
-\usepackage{forloop}
-\usepackage{fullpage}
-\usepackage{setspace}
-\usepackage[pdftex,
-  pdfauthor={Trever Fischer},
-  pdftitle={SYNHAK Guest Sign-in}]{hyperref}
-\pagestyle{empty}
+\documentclass{synhak}
 \newcounter{row}
 
 \begin{document}
 \title{SYNHAK Guest Sign-in}
-\author{Trever Fischer}
-\date{\today}
+\maketitle
 
 \begin{center}
-\includegraphics[width=8cm]{images/logo}\\[1cm]
-\rule{\linewidth}{0.5mm}
-
-\textsc{\Large SYNHAK Guest Sign-in}\\[1cm]
-
-
 \begin{doublespace}
 \begin{tabularx}{\textwidth}{ |X|X|X|X| }
 \hline

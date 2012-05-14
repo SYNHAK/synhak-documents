@@ -1,18 +1,8 @@
-\documentclass[11pt,letterpaper,oneside]{article}
-\usepackage{graphicx}
-\usepackage[pdftex,
-  pdfauthor={Trever Fischer},
-  pdftitle={SYNHAK Binder Cover}]{hyperref}
+\documentclass{synhak}
+
 \begin{document}
-\title{SYNHAK Binder Cover}
-\date{\today}
-\begin{center}
-\includegraphics[width=8cm]{images/logo}\\[1cm]
-\rule{\linewidth}{0.5mm}
-
-\textsc{\Large The SYNHAK Binder}\\[1cm]
-
-\end{center}
+\title{The SYNHAK Binder}
+\maketitle
 
 \begin{Large}
 Contents:

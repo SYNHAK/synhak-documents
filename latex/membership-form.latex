@@ -2,7 +2,7 @@
 \usepackage{graphicx}
 \usepackage{tabularx}
 \usepackage{forloop}
-\usepackage{fullpage}
+\usepackage[cm]{fullpage}
 \usepackage{setspace}
 \usepackage[pdftex,
   pdfauthor={Trever Fischer},
@@ -21,7 +21,9 @@
 \textsc{\Large SYNHAK Membership Application}\\[1cm]
 \end{center}
 \emph{This form is not the only step in becoming a member.} Please follow the
-process described at http://synhak.org/wiki/Membership. \\
+process described at
+
+http://synhak.org/wiki/Membership. \\
 
 \emph{Name:}
 \line(1,0){200}

@@ -42,7 +42,10 @@ promise to be excellent to people.
 \begin{center}
 \begin{tabularx}{\textwidth} { r l }
 \line(1,0){250} & \line(1,0){100} \\
-Signature & Date
+Signature & Date \\
+\\
+\line(1,0){250} & \line(1,0){100} \\
+Email & Phone Number
 \end{tabularx}
 \end{center}
 \rule{\linewidth}{0.5mm}

@@ -9,6 +9,8 @@
   pdftitle={SYNHAK Membership Application}]{hyperref}
 \pagestyle{empty}
 
+\input {membership-form.version.latex}
+
 \begin{document}
 \title{SYNHAK Membership Application}
 \author{Trever Fischer}
@@ -62,5 +64,7 @@ Email & Phone Number
 
 \rule{\linewidth}{0.5mm}
 \emph{Dues paid:} \$\line(1,0){50}, started on \line(1,0){60}\\
+
+\GITAbrHash, \GITAuthorDate, \GITAuthorName
 
 \end{document}

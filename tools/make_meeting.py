@@ -4,17 +4,43 @@ import sys
 import datetime
 import time
 import settings
+import smtplib
+from email.mime.text import MIMEText
 from Cheetah.Template import Template
 
 site = wiki.Wiki("http://synhak.org/w/api.php")
 site.login(settings.botName, settings.botPassword)
 
 
-nextMeetingDate = map(int, page.Page(site, "Next Meeting", followRedir=False).getWikiText().split("/")[1].replace("]", "").split("-"))
-nextMeetingDate = datetime.date(nextMeetingDate[2], nextMeetingDate[1], nextMeetingDate[0])
+nextMeetingDateText = map(int, page.Page(site, "Next Meeting", followRedir=False).getWikiText().split("/")[1].replace("]", "").split("-"))
+nextMeetingDate = datetime.date(nextMeetingDateText[2], nextMeetingDateText[1], nextMeetingDateText[0])
 now = datetime.date.today()
 if now > nextMeetingDate:
     date = nextMeetingDate+datetime.timedelta(days=7)
+elif now == nextMeetingDate:
+    time = datetime.date.today()
+    print "There is a meeting scheduled for today. Sending mail."
+    meetingMailTemplate = page.Page(site, "Meetings/Template/Mail")
+    meetingMailTemplateContents = ""
+    inTemplate = False
+    for line in meetingMailTemplate.getWikiText().split("\n"):
+        if "<phongTemplate>" in line:
+            inTemplate = True
+            continue
+        if "</phongTemplate>" in line:
+            inTemplate = False
+        if inTemplate:
+            meetingMailTemplateContents += line+"\n"
+    namespace = {'date': nextMeetingDate, 'meetingLink': "http://synhak.org/wiki/Meetings/%d-%d-%d"%(nextMeetingDate.day, nextMeetingDate.month, nextMeetingDate.year)}
+    mailTemplate = Template(meetingMailTemplateContents, searchList=[namespace])
+    msg = MIMEText(unicode(mailTemplate))
+    msg['Subject'] = "REMINDER: Meeting tonight!"
+    msg['From'] = "phong@synhak.org <Phong>"
+    msg['To'] = "devel@synhak.org, announce@synhak.org"
+    s = smtplib.SMTP('localhost')
+    s.sendmail(msg['From'], msg['To'], msg.as_string())
+    s.quit()
+    sys.exit(0)
 else:
     print "There is already a meeting scheduled for %s"%(nextMeetingDate)
     sys.exit(0)

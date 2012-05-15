@@ -42,10 +42,10 @@ lastMeetingPage = page.Page(site, "Last Meeting", followRedir=False)
 nextMeetingPage = page.Page(site, "Next Meeting", followRedir=False)
 
 print "Writing next meeting page"
-#newMeetingPage.edit(summary="Created new meeting page", bot=True, text=unicode(meetingTemplate))
+newMeetingPage.edit(summary="Created new meeting page", bot=True, text=unicode(meetingTemplate))
 
 print "Moving [[Next Meeting]] to [[Last Meeting]]"
-#lastMeetingPage.edit(summary="Update previous meeting", bot=True, text=nextMeetingPage.getWikiText())
+lastMeetingPage.edit(summary="Update previous meeting", bot=True, text=nextMeetingPage.getWikiText())
 
 print "Updating [[Next Meeting]]"
-#nextMeetingPage.edit(summary="Update next meeting", bot=True, text="#Redirect [[%s]]"%(newMeetingTitle))
+nextMeetingPage.edit(summary="Update next meeting", bot=True, text="#Redirect [[%s]]"%(newMeetingTitle))

@@ -7,10 +7,14 @@ import settings
 import smtplib
 from email.mime.text import MIMEText
 from Cheetah.Template import Template
+import optparse
+
+parser = optparse.OptionParser()
+parser.add_option("-d", "--dry-run", help="Don't actually send mails or edit pages. Just say what would happen.", default=False, action="store_true")
+(options, args) = parser.parse_args()
 
 site = wiki.Wiki("http://synhak.org/w/api.php")
 site.login(settings.botName, settings.botPassword)
-
 
 nextMeetingDateText = map(int, page.Page(site, "Next Meeting", followRedir=False).getWikiText().split("/")[1].replace("]", "").split("-"))
 nextMeetingDate = datetime.date(nextMeetingDateText[2], nextMeetingDateText[1], nextMeetingDateText[0])
@@ -38,8 +42,9 @@ elif now == nextMeetingDate:
     msg['From'] = "phong@synhak.org <Phong>"
     msg['To'] = "devel@synhak.org, announce@synhak.org"
     s = smtplib.SMTP('localhost')
-    s.sendmail(msg['From'], msg['To'], msg.as_string())
-    s.quit()
+    if not options.dry_run:
+      s.sendmail(msg['From'], msg['To'], msg.as_string())
+      s.quit()
     sys.exit(0)
 else:
     print "There is already a meeting scheduled for %s"%(nextMeetingDate)
@@ -68,10 +73,13 @@ lastMeetingPage = page.Page(site, "Last Meeting", followRedir=False)
 nextMeetingPage = page.Page(site, "Next Meeting", followRedir=False)
 
 print "Writing next meeting page"
-newMeetingPage.edit(summary="Created new meeting page", bot=True, text=unicode(meetingTemplate))
+if not options.dry_run:
+  newMeetingPage.edit(summary="Created new meeting page", bot=True, text=unicode(meetingTemplate))
 
 print "Moving [[Next Meeting]] to [[Last Meeting]]"
-lastMeetingPage.edit(summary="Update previous meeting", bot=True, text=nextMeetingPage.getWikiText())
+if not options.dry_run:
+  lastMeetingPage.edit(summary="Update previous meeting", bot=True, text=nextMeetingPage.getWikiText())
 
 print "Updating [[Next Meeting]]"
-nextMeetingPage.edit(summary="Update next meeting", bot=True, text="#Redirect [[%s]]"%(newMeetingTitle))
+if not options.dry_run:
+  nextMeetingPage.edit(summary="Update next meeting", bot=True, text="#Redirect [[%s]]"%(newMeetingTitle))

@@ -1,0 +1,17 @@
+\documentclass[nologo]{synhak}
+\usepackage{questions}
+\newcounter{row}
+\begin{document}
+\title{Pay Your Dues}
+\maketitle
+\forloop{row}{1}{\value{row} < 13}{
+	\begin{spacing}{3}
+	\begin{tabularx}{\textwidth} { r l }
+        \Qline{15cm} &
+        \Qline{3cm} \\
+		\Qq{Name} &
+		\Qq{Amount Included}
+	\end{tabularx}
+	\end{spacing}
+}
+\end{document}

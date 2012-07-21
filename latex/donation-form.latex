@@ -1,0 +1,62 @@
+\documentclass[compact]{synhak}
+\usepackage{questions}
+
+\begin{document}
+\title{Gift Acceptance Form}
+\date{\today}
+\maketitle
+
+\begin{doublespace}
+I, the donor hereby give you the following gift of
+\Qlines{2}
+
+with the intention that SYNHAK shall immediately become the absolute owner.
+
+I, the donor, understand that SYNHAK will assume responsibility for the gift and
+relinquish all rights of ownership or restrictions of the gift. From this point on,
+SYNHAK can determine the use and final disposition made of the gift.
+
+\noindent \Qq{Donor's Name (Print)} \Qline{8cm}
+
+\noindent \Qq{Address} \Qline{7cm}
+\Qq{City} \Qline{4cm}
+\Qq{State} \Qline{1cm}
+\Qq{Zip} \Qline{3cm}
+
+This gift is valued at (Determined by donor) \Qq{\$}\Qline{3cm}. If the gift is valued more than \$5,000
+the IRS requires an apprasial performed by a qualified appraiser. If donor waives the right to
+claim this gift on their tax return by opting out of the apprasial, please initial here: \Qline{1cm}
+
+If gift is monetary, please allocate my gift of \Qq{\$}\Qline{2cm} to the following purpose:
+
+\Qlines{3}
+
+
+If donation is a gift honoring someone, please complete the following:
+
+In Honor/Memory of \Qline{4cm}, recognizing \Qline{4cm}
+
+Please send acknowledgement to:
+
+\noindent \Qq{Name} \Qline{5cm}
+
+\noindent \Qq{Address} \Qline{7cm}
+\Qq{City} \Qline{4cm}
+\Qq{State} \Qline{1cm}
+\Qq{Zip} \Qline{3cm}
+
+This form should be received at the time of the gift, but no later than December 30th
+in the year in which it was given to recieve tax credit.
+
+I have read and fully understand SYNHAK's gift acceptance policy.
+
+\Qq{Donor's Signature} \Qline{8cm}
+
+\Qq{Date} \Qline{3cm}
+
+\Qq{Authorized SYNHAK Signature} \Qline{8cm}
+
+\Qq{Date} \Qline{3cm}
+\end{doublespace}
+
+\end{document}

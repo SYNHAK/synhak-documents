@@ -1,0 +1,66 @@
+\documentclass[compact]{synhak}
+\usepackage{questions}
+
+\begin{document}
+\title{Contact Form}
+\date{\today}
+\maketitle
+
+\section*{Personal Contact Information}
+
+\begin{doublespace}
+
+\noindent \Qq{Name} \Qline{10cm}
+
+\noindent \Qq{Address} \Qline{7cm}
+\Qq{City} \Qline{4cm}
+\Qq{State} \Qline{1cm}
+\Qq{Zip} \Qline{3cm}
+
+\noindent \Qq{Telephone} \Qline{10cm}
+\end{doublespace}
+
+\section*{Emergency Contact Information}
+
+\begin{doublespace}
+\noindent \Qq{Name} \Qline{8cm} \Qq{Relationship} \Qline{3cm}
+
+\noindent \Qq{Address} \Qline{7cm}
+\Qq{City} \Qline{4cm}
+\Qq{State} \Qline{1cm}
+\Qq{Zip} \Qline{3cm}
+
+\noindent \Qq{Telephone} \Qline{10cm}
+
+\noindent \Qq{Name} \Qline{8cm} \Qq{Relationship} \Qline{3cm}
+
+\noindent \Qq{Address} \Qline{7cm}
+\Qq{City} \Qline{4cm}
+\Qq{State} \Qline{1cm}
+\Qq{Zip} \Qline{3cm}
+
+\noindent \Qq{Telephone} \Qline{10cm}
+\end{doublespace}
+
+\section*{Medical Information}
+
+\begin{doublespace}
+\noindent \Qq{Known Allergies}
+\Qlines{2}
+
+\noindent \Qq{Important Medications}
+\Qlines{2}
+\end{doublespace}
+
+\noindent \QO{} I have voluntarily provided the above contact information and authorize SYNHAK and its
+representatives to contact any of the above on my behalf in the event of an emergency.
+
+\noindent \QO{} I choose not to furnish any emergency contact information to SYNHAK at this time.
+
+\begin{doublespace}
+\Qq{Signature} \Qline{10cm}
+
+\Qq{Date} \Qline{3cm}
+\end{doublespace}
+
+\end{document}

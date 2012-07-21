@@ -22,5 +22,6 @@ $(DOCUMENTS): $(IMAGES)
 			\\gdef\\GITAuthorDate{%ad}\
 			\\gdef\\GITAuthorName{%an}" $*.latex >> $@
 	git status -s $*.latex | grep ?? && echo "\\gdef\\GITAbrHash{UNCOMMITTED}\\gdef\\GITAuthorDate{??/??/??}\\gdef\\GITAuthorName{${USER}@${HOSTNAME}}" >> $@ || exit 0
+	git status -s $*.latex | grep ^A && echo "\\gdef\\GITAbrHash{UNCOMMITTED}\\gdef\\GITAuthorDate{??/??/??}\\gdef\\GITAuthorName{${USER}@${HOSTNAME}}" >> $@ || exit 0
 
 .PHONY: all clean

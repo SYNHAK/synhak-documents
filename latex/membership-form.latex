@@ -1,4 +1,5 @@
 \documentclass{synhak}
+\usepackage{questions}
 
 \begin{document}
 \title{SYNHAK Membership Application}
@@ -9,17 +10,12 @@ process described at
 
 http://synhak.org/wiki/Membership. \\
 
-\emph{Name:}
-\line(1,0){200}
+\Qq{Name:}
+\Qline{8cm}
 
-\emph{Why:}
-
+\Qq{Why:}
 \begin{doublespace}
-\rule{\linewidth}{0.1mm}
-\rule{\linewidth}{0.1mm}
-\rule{\linewidth}{0.1mm}
-\rule{\linewidth}{0.1mm}
-\rule{\linewidth}{0.1mm}
+\Qlines{5}
 \end{doublespace}
 
 I, the unersigned, confirm that the information here is true and correct; and I
@@ -39,12 +35,16 @@ Email & Phone Number
 \emph{Not to be filled out by the applicant}
 \end{center}
 
-\emph{Sponsor 1 Signature:} \line(1,0){200} \\
-\emph{Phone/Email:} \line(1,0){200} \\
-\emph{Sponsor 2 Signature:} \line(1,0){200} \\
-\emph{Phone/Email:} \line(1,0){200} \\
+\begin{doublespace}
+\begin{tabularx}{\textwidth} { r r }
+\Qq{Sponsor 1 Signature:} & \Qline{10cm} \\
+\Qq{Phone/Email:} & \Qline{10cm} \\
+\Qq{Sponsor 2 Signature:} & \Qline{10cm} \\
+\Qq{Phone/Email:} & \Qline{10cm} \\
+\end{tabularx}
+\rule{\linewidth}{0.5mm} \\
+\Qq{Dues paid:} \Qline{10cm}, \Qq{started on} \Qline{3cm}
+\end{doublespace}
 
-\rule{\linewidth}{0.5mm}
-\emph{Dues paid:} \$\line(1,0){50}, started on \line(1,0){60}\\
 
 \end{document}

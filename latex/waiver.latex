@@ -1,4 +1,5 @@
-\documentclass[nologo]{synhak}
+\documentclass[compact]{synhak}
+\usepackage{questions}
 \usepackage[compact]{titlesec}
 \titleformat{\section}{\small}{\thesection}{}{}
 \newcounter{row}
@@ -68,9 +69,9 @@ activities.
 \end{footnotesize}
 \begin{spacing}{3.5}
 
-Signature \line(1,0){200}
+\Qq{Signature} \Qline{10cm}
 
-Printed Name \line(1,0){200} Date \line(1,0){50}
+\Qq{Printed Name} \Qline{8cm} \Qq{Date} \Qline{2cm}
 \end{spacing}
 
 \end{document}

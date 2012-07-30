@@ -1,0 +1,3 @@
+botName = "Hackbot"
+botPassword = "WikiPassword"
+meetingMailAddresses = ["discuss@synhak.org", "meeting-archive@synhak.org"]

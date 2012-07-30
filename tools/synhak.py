@@ -38,7 +38,7 @@ class API(object):
     lastMeeting = self.getMeeting(self.lastMeetingDate())
     return "<phongMinutesNotReady/>" not in lastMeeting.getWikiText()
 
-  def mailLastMinutes(self):
+  def mailLastMinutes(self, addresses=[]):
     lastMeeting = self.getMeeting(self.lastMeetingDate())
     params = lastMeeting.templateParams()
     params['minutes'] = lastMeeting.getWikiText()
@@ -46,11 +46,11 @@ class API(object):
     msg = MIMEText(unicode(mailTemplate), _charset="utf-8")
     msg['Subject'] = "Meeting minutes from %s"%(self.lastMeetingDate())
     msg['From'] = "phong@synhak.org <Phong>"
-    msg['To'] = "devel@synhak.org, announce@synhak.org"
+    msg['To'] = ', '.join(addresses)
     print "Sending mail about updated minutes"
     if not self._dry:
       s = smtplib.SMTP('localhost')
-      s.sendmail(msg['From'], msg['To'], msg.as_string())
+      s.sendmail(msg['From'], addresses, msg.as_string())
       s.quit()
       self._state['meetings'][str(self.lastMeetingDate())]['minutesSent'] = True
     else:
@@ -93,17 +93,17 @@ class API(object):
     if now == self.nextMeetingDate():
       return True
 
-  def remindAboutNextMeeting(self):
+  def remindAboutNextMeeting(self, addresses=[]):
     nextMeeting = self.getMeeting(self.nextMeetingDate())
     mailTemplate = TemplatePage(self, "Meetings/Template/Mail", nextMeeting.templateParams())
     msg = MIMEText(unicode(mailTemplate))
     msg['Subject'] = "REMINDER: Meeting tonight!"
     msg['From'] = "phong@synhak.org <Phong>"
-    msg['To'] = "devel@synhak.org, announce@synhak.org"
+    msg['To'] = ', '.join(addresses)
     print "Sending reminder mail."
     if not self._dry:
       s = smtplib.SMTP('localhost')
-      s.sendmail(msg['From'], msg['To'], msg.as_string())
+      s.sendmail(msg['From'], addresses, msg.as_string())
       s.quit()
       self._state['meetings'][str(self.nextMeetingDate())]['reminderSent'] = True
     else:

@@ -9,6 +9,7 @@ parser.add_option("-r", "--remind", help="Send out the reminder mail, if one is 
 parser.add_option("-w", "--wiki", help="Update the wiki", default=False, action="store_true")
 parser.add_option("-s", "--state-dir", help="Path to the directory where state is stored between runs", default="~/.local/share/Phong/", metavar="PATH")
 parser.add_option("-m", "--minutes", help="Send mail about posted minutes", default=False, action="store_true")
+parser.add_option("-e", "--mail", help="Address to send mail to. May be specified multiple times.", default=[], action="append", type="str", dest="mail_addresses")
 (options, args) = parser.parse_args()
 
 api = synhak.API(settings.botName, settings.botPassword, dryRun=options.dry_run, stateDir=options.state_dir)
@@ -17,7 +18,7 @@ if options.minutes:
   if api.alreadySentMinutes():
     print "Already mailed out the last meeting minutes."
   elif api.minutesReadyToBeSent():
-    api.mailLastMinutes()
+    api.mailLastMinutes(settings.meetingMailAddresses)
   else:
     print "Minutes not yet ready to be sent."
 
@@ -29,6 +30,6 @@ if options.remind:
     if api.alreadyRemindedAboutMeeting():
       print "Already sent a mail for today."
     else:
-      api.remindAboutNextMeeting()
+      api.remindAboutNextMeeting(settings.meetingMailAddresses)
   else:
     print "No meeting today. Not sending reminder mail."

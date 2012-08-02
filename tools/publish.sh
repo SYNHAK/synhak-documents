@@ -7,6 +7,7 @@ make
 rsync -avz *.pdf --delete /home/secretary/public_html/docs/
 
 cd /home/secretary/synhak-documents/svg
+make
 rsync -avz *.pdf *.png *.svg --delete /home/secretary/public_html/docs/images/
 
 cd /home/secretary/synhak-bylaws/

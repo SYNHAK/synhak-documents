@@ -8,6 +8,9 @@ clean:
 
 $(DOCUMENTS): $(IMAGES)
 
+images/logo.svg:
+	ln -s ../../svg/logo.svg images/logo.svg
+
 %.pdf: %.svg
 		inkscape -z -T -A $@ $<
 

@@ -226,6 +226,51 @@ class TemplatePage(object):
     template = Template(TemplatePage.extractTemplateContents(self._page.getWikiText()), self._search)
     return unicode(template)
 
+class MeetingMeta(object):
+  def __init__(self, meeting, infoboxText):
+    self._meeting = meeting
+    self._raw = infoboxText
+    self.params = {}
+    args = self._raw.split('|')
+    curArg = []
+    realArgs = []
+    for arg in args[1:]:
+      if "=" in arg and len(curArg) > 0:
+        realArgs.append('|'.join(curArg).strip())
+        curArg = []
+      curArg.append(arg)
+    if len(curArg) > 0:
+      realArgs.append('|'.join(curArg))
+    for arg in realArgs:
+      try:
+        (param, value) = map(lambda x:x.strip(), arg.split('=', 1))
+      except ValueError:
+        print "Couldn't pull metadata from", arg
+        raise
+      self.params[param] = value
+
+  def __repr__(self):
+    ret = "{{Infobox_meeting\n"
+    params = []
+    if len(self.params) > 0:
+      ret += "|"
+    for k,v in self.params.iteritems():
+      params.append("%s = %s"%(k, v))
+    ret += '\n|'.join(params)
+    ret += "\n}}"
+    return ret
+
+  def __eq__(self, other):
+    if len(self.params) != len(other.params):
+      return False
+    for k,v in self.params.iteritems():
+      if k in other.params:
+        if v != other.params[k]:
+          return False
+      else:
+        return False
+    return True
+
 class Meeting(page.Page):
 
   @staticmethod
@@ -240,7 +285,57 @@ class Meeting(page.Page):
     super(Meeting, self).__init__(api._site, self._pageName, *args, **kwargs)
 
   def templateParams(self):
-    return {'date': self._date, 'meetingLink': "%s%s"%(self._api._uri, self._pageName), 'greeting': self._api.randomGreeting()}
+    return {
+      'date': self._date,
+      'meetingLink': "%s%s"%(self._api._uri, self._pageName),
+      'greeting': self._api.randomGreeting(),
+      'next': "%s"%(self.nextMeeting()._pageName),
+      'previous': "%s"%(self.previousMeeting()._pageName)
+    }
+
+  def nextMeeting(self):
+    if self.alreadyExists() and 'next' in self.meta().params:
+      (day, month, year) = map(int,
+          self.meta().params['next'].split('/')[1].split('-'))
+      stamp = datetime.date(day=day, month=month, year=year)
+      return self._api.getMeeting(stamp)
+    return self._api.getMeeting(self._date + datetime.timedelta(days=7))
+
+  def previousMeeting(self):
+    if self.alreadyExists() and 'previous' in self.meta().params:
+      (day, month, year) = map(int,
+          self.meta().params['previous'].split('/')[1].split('-'))
+      stamp = datetime.date(day=day, month=month, year=year)
+      return self._api.getMeeting(stamp)
+    return self._api.getMeeting(self._date + datetime.timedelta(days=-7))
+
+  def meta(self):
+    templates = self.getWikiText().split('{{')
+    for template in templates:
+      if template.startswith('Infobox'):
+        (infobox,foo) = template.split('}}', 1)
+        return MeetingMeta(self, infobox)
+
+  def setMeta(self, meta):
+    if self.meta() == meta:
+      return
+    text = ''
+    templates = self.getWikiText().split('{{')
+    for template in templates:
+      if template.startswith('Infobox'):
+        (infobox, foo) = template.split('}}', 1)
+        text += repr(meta) + foo
+      else:
+        text += template
+    self.edit(summary="Update meeting links", bot=True, text=text)
+
+  def adjustSequenceLinks(self):
+    previous = self.previousMeeting()
+    next = self.nextMeeting()
+    meta = self.meta()
+    meta.params['previous'] = previous._pageName
+    meta.params['next'] = next._pageName
+    self.setMeta(meta)
 
   def alreadyExists(self):
     try:

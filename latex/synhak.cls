@@ -3,9 +3,13 @@
 
 \newif\iflogo
 \newif\ifcompact
+\newif\ifgit
+\newif\ifletterhead
 
+\gittrue
 \logotrue
 \compactfalse
+\letterheadfalse
 
 \usepackage{graphicx}
 \usepackage{tabularx}
@@ -25,6 +29,14 @@
     {\compacttrue}
 \DeclareOption{full}
     {\compactfalse}
+\DeclareOption{git}
+    {\gittrue}
+\DeclareOption{nogit}
+    {\gitfalse}
+\DeclareOption{letterhead}
+    {\letterheadtrue}
+\DeclareOption{noletterhead}
+    {\letterheadfalse}
 \ProcessOptions
 
 \input {\jobname.version.latex}
@@ -33,12 +45,16 @@
 \def \maketitle {%
 \ifcompact
   \begin{tabularx}{\textwidth}{ X X X }
-    \iflogo \includegraphics[width=3cm]{images/logo} \fi & \@title & \versioninfo \\
+    \iflogo \includegraphics[width=3cm]{images/logo} \fi & \@title \ifgit & \versioninfo \fi \\
   \end{tabularx}
 \else
   \begin{center}
   \iflogo
     \includegraphics[width=8cm]{images/logo}\\[1cm]
+    The Akron Hackerspace \\
+    \ifletterhead
+      \textsc{\small 1456 Riverside Dr, Akron, OH 44310 | http://synhak.org }\\[1cm]
+    \fi
     \rule{\linewidth}{0.5mm}
   \fi
 
@@ -57,6 +73,6 @@
 \ifcompact
 \else
 \makeatletter
-\fancyfoot[C]{\versioninfo}
+\ifgit \fancyfoot[C]{\versioninfo} \fi
 \makeatother
 \fi

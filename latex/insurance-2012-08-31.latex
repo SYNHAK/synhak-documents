@@ -1,0 +1,13 @@
+% This letter was sent to the First Nonprofit Corporation when acquiring
+% insurance.
+\documentclass[letterhead,nogit]{synhak}
+\begin{document}
+\title{}
+\maketitle
+
+This letter certifies that there have been no insurance claims or losses since
+the inception of SYNHAK, Inc in February of 2012.
+
+-- Trever Fischer, Champion, Board Member
+
+\end{document}

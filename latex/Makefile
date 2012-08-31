@@ -1,5 +1,13 @@
 IMAGES = images/logo.pdf
-DOCUMENTS = guest-sign-sheet.pdf waiver.pdf membership-form.pdf space-rules.pdf binder-cover.pdf dropbox-dues.pdf donation-form.pdf contact-form.pdf
+DOCUMENTS = guest-sign-sheet.pdf \
+						waiver.pdf \
+						membership-form.pdf \
+						space-rules.pdf \
+						binder-cover.pdf \
+						dropbox-dues.pdf \
+						donation-form.pdf \
+						contact-form.pdf \
+						insurance-2012-08-31.pdf
 
 all: $(DOCUMENTS)
 

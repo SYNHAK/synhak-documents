@@ -1,6 +1,7 @@
 % This letter was sent to the First Nonprofit Corporation when acquiring
 % insurance.
 \documentclass[letterhead,nogit]{synhak}
+\usepackage{alltt}
 \begin{document}
 \title{}
 \maketitle
@@ -9,5 +10,18 @@ This letter certifies that there have been no insurance claims or losses since
 the inception of SYNHAK, Inc in February of 2012.
 
 -- Trever Fischer, Champion, Board Member
+
+\begin{alltt}
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+owGbwMvMwCRoxlf+7wi/5gzG0+1JDAEO32VCMjKLFXJSS0pSixSSU4tKMtMyU4sV
+SjISS4BEalGqQkZiWapCUmpqnkJevkJmXnFpUWJecqpCck5iZm6xQn6RQk5+cTFQ
+S3EmUJgLqEcBxCgoyczPU8hPUwiO9PNw9NZR8MxLBkoouKUmFZUmFlWCpIwMDI30
+uDrcWBgEmRjYWJlAzmHg4hSAufHabIZ5mk/MF9958b0/hkPRqinht/+120X9DPNU
+S368lZ4VzZnRvne7/8UUydxlTksA
+=rrvL
+-----END PGP MESSAGE-----
+\end{alltt}
 
 \end{document}

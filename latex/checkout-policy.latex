@@ -1,0 +1,45 @@
+\documentclass{synhak}
+\usepackage{questions}
+
+\begin{document}
+\title{Equipment Checkout Policy}
+\maketitle
+
+The Equipment Checkout Policy is designed to ensure that equipment and tools are
+as broadly available as possible without limiting loan periods too much, provide
+priority cases for classes, and to make sure equipment remains in good working
+order.
+
+\begin{enumerate}
+\item SYNHAK equipment may be checked out at the discretion of a SYNHAK Champion.
+\item A SYNHAK membership in good standing is required for checking out
+equipment.
+\item An up to date SYNHAK member contact form is required.
+\item The minimum age for checking out equipment is 18 earth years of age.
+\item All equipment must be checked out in person.
+\item Equipment loan periods may not extend fourteen days.
+\item You are responsible for returning all equipment by the due-date issued at
+the time of checkout.
+\item You may request a renewal at the discretion of a SYNHAK Champion.
+\item Items may only be renewed by phone or in person, as availability must be
+confirmed prior to renewing.
+\item When you check something out, you assume personal financial responsibility
+for the loss or damage of items.
+\item Late returns may be subject to fines. Failure to pay fines may result in
+termination of membership.
+\item Lost, broken, or stolen equipment will be subject to replacement and
+processing costs.
+\item If your SYNHAK membership is terminated or suspended at any time, any and
+all checked out equipment must be returned immediately.
+\end{enumerate}
+
+I, \Qline{8cm}, have fully read and understand the above terms and conditions. I
+fully assume all risks and responsibilities associated with use of the equipment.
+
+\begin{spacing}{3.5}
+\Qq{Signature} \Qline{10cm}
+
+\Qq{Printed Name} \Qline{8cm} \Qq{Date} \Qline{2cm}
+\end{spacing}
+
+\end{document}

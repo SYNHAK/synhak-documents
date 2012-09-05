@@ -9,6 +9,7 @@ DOCUMENTS = guest-sign-sheet.pdf \
 						contact-form.pdf \
 						insurance-2012-08-31.pdf \
 						checkout-form.pdf \
+						checkout-policy.pdf \
 
 all: $(DOCUMENTS)
 

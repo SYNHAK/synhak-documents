@@ -1,0 +1,38 @@
+\documentclass{synhak}
+\newcounter{row}
+\usepackage{questions}
+
+\begin{document}
+\title{Tool Checkout Form}
+\maketitle
+
+\begin{doublespace}
+I, \Qline{8cm}, hereby accept the as items listed as temporary custody from
+SYNHAK, to be returned within \Qline{1cm} days. I am also aware that I am
+personally responsible for these items. If they become lost, missing, or stolen,
+I will pay for them out of personal funds. The items issued are:
+
+\begin{center}
+\begin{tabularx}{\textwidth}{ |X|X|X|X| }
+\hline
+Quantity & Item & Serial Number & Approximate Value \\ \hline
+\forloop{row}{1}{\value{row} < 5}{  &   &   &   \\ \hline }
+ & & & \\ \hline
+\end{tabularx}
+\end{center}
+
+I understand that a copy of this form will be kept with my membership records at
+SYNHAK. This also certifies that I have been issued a copy of the equipment
+checkout policy.
+
+
+\Qq{Members's Signature} \Qline{8cm}
+
+\Qq{Date} \Qline{3cm}
+
+\Qq{Authorized SYNHAK Signature} \Qline{8cm}
+
+\Qq{Date} \Qline{3cm}
+\end{doublespace}
+
+\end{document}

@@ -1,0 +1,47 @@
+% This letter was sent to the First Nonprofit Corporation when acquiring
+% insurance.
+\documentclass[letterhead,nogit]{synhak}
+\usepackage{alltt}
+\begin{document}
+\title{}
+\maketitle
+
+This letter confirms that a waiver of liability and release form has been
+secured from all current members. All visitors and future members will be
+required to do the same.
+
+Additionally, we confirm that personal protective equipment is available to all
+and worn when appropriate. Our facility rules are clearly posted in multiple
+locations around the space and are included for reference:
+
+\begin{enumerate}
+\item Be excellent to each other.
+\item Wear proper safety equipment.
+\item If you don't know how to use it, you can't use it.
+\item Keep it tidy.
+\item If it is not yours, don't break it.
+\item If its broken, fix it.
+\end{enumerate}
+
+-- Trever Fischer, Champion, Board Member
+
+\begin{alltt}
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+owFNkr2LFEEQxcf1AxzQu8XEsMDgUJeNxOAwuUMEuUADweQEe3pqnGJ7usfq7p0b
+DhGNNBAUDE4T/TcEw8PEyEDQ2EjzS8Xq2VvZsKvqvfm9mnp97mQ2Gl8/3/09XLt8
+cOLr7yK7+/6bvleTB4MhIIN2tiJuPIRaBVDQKZpL2VVgSBVkKPSgbAmMBpVHqBw3
+UCsPBaLNPerIWELFrgFlDMiT0QZosCmQ/RS2pDgnT8GxH4yqGESyHICOZKDAnPFx
+pGQVHJROaBC8anCa51tlSYGcFft+Ah0ukRfErZikHrTsAuog9JCs2iZhSE41V2RU
+YTA5i0eeIDrHFroaLahWhC2TCjiFO5GhUnqRmqNBkQurluhsemidD0JIFppoArUG
+c+O0SnBp0EVxHsBbpXEIm9RktYllWpJjWWOFsiCNm3m+W+AjsvtoY4Ms33+S71LA
+BrYlwZ5GY1ICgUala3BizNPjifvCkwJLeNlShUL7P/Ny5nYFvYuyS7sRYGZdB7Xr
+Xia/KL+RwmRoa5Xai8pSuYPYyhMClf2KGw3rtC4kIfvJsXXBqGYr6mFSzoPdDO0E
+KtpbNNGWq1Ff3DqVjUfZmdOjdJFZfnZ9eaZHf7KPBxeuXHwIzzeO3q4dXn22/v3N
+zk3MPmz/+Hzj0v7Pa+ETvnr67sGvcftl8x8=
+=MoOM
+-----END PGP MESSAGE-----
+\end{alltt}
+
+\end{document}

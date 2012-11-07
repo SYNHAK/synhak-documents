@@ -8,6 +8,7 @@ DOCUMENTS = guest-sign-sheet.pdf \
 						donation-form.pdf \
 						contact-form.pdf \
 						insurance-2012-08-31.pdf \
+						insurance-2012-11-07.pdf \
 						checkout-form.pdf \
 						checkout-policy.pdf \
 

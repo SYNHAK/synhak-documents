@@ -73,7 +73,9 @@
 }
 \newcommand{\StampBox}[1]{
   \begin{wrapfigure}{r}{5cm}
-    \framebox[5cm]{\raisebox{0pt}[2cm]\\{\small #1}}
+    \vspace{-20pt}
+    \framebox[4.5cm]{\raisebox{0pt}[2cm]\\{\small #1}}
+    \vspace{-20pt}
   \end{wrapfigure}
 }
 \makeatother

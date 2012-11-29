@@ -13,11 +13,11 @@ personally responsible for these items. If they become lost, missing, or stolen,
 I will pay for them out of personal funds. The items issued are:
 
 \begin{center}
-\begin{tabularx}{\textwidth}{ |X|X|X|X|X| }
+\begin{tabularx}{\textwidth}{ |X|X|X|X|X|X| }
 \hline
-Quantity & Item & Serial Number & Approximate Value & Returned \\ \hline
-\forloop{row}{1}{\value{row} < 5}{  &   &   &   & \QO \\ \hline }
- & & & & \QO \\ \hline
+Quantity & Item & Spiff ID & Serial Number & Approximate Value & Returned Date \\ \hline
+\forloop{row}{1}{\value{row} < 5}{  &   &   &   &   & \QO \\ \hline }
+ & & & & & \QO \\ \hline
 \end{tabularx}
 \end{center}
 

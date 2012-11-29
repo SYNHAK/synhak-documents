@@ -2,7 +2,7 @@
 \usepackage{questions}
 
 \begin{document}
-\title{Gift Acceptance Form}
+\title{Gift Acceptance Form \\ EIN: 45-4741370}
 \date{\today}
 \maketitle
 

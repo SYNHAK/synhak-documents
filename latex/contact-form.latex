@@ -12,6 +12,8 @@
 
 \noindent \Qq{Name} \Qline{10cm}
 
+\noindent \Qq{Email Address} \Qline{10cm}
+
 \noindent \Qq{Address} \Qline{7cm}
 \Qq{City} \Qline{4cm}
 \Qq{State} \Qline{1cm}

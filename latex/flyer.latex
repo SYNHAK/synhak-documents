@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage[margin=0.5in,landscape]{geometry}
+\usepackage{multicol}
+\usepackage{setspace}
+\usepackage{pgfpages}
+\usepackage{forloop}
+\pgfpagesuselayout{2 on 1}[letterpaper]
+\pagestyle{empty}
+\newcounter{pagenum}
+
+\begin{document}
+
+\forloop{pagenum}{1}{\value{pagenum} < 3}{
+
+\begin{center}
+\includegraphics[width=8cm]{images/logo}
+
+http://synhak.org/
+
+{\LARGE
+We are a not-for-profit infrastructure provider for people who want to make things. Whether it
+be works of art, prototyping an invention, starting a small business, or simply
+working on a hobby. We provide the place, the needed tools, the necessary
+knowledge, and networking opportunities for our members. We offer free public
+workshops once a month on subjects such as:
+
+\begin{multicols}{2}
+\begin{enumerate}
+\item Beer Brewing
+\item Wood Working
+\item Basic and Advanced Electronics
+\item Plastic Fabrication
+\item Welding and Metal Working
+\item Sewing and Crafts
+\item Software Engineering
+\item Artwork
+\item Space Exploration
+\item Community Outreach
+\end{enumerate}
+\end{multicols}
+
+\textbf{Join us for our Open House and Grand Opening at our new location}
+
+Saturday, January 5th 2012 \\
+21 W. North St. Akron, Ohio, 44304
+}
+\end{center}
+\newpage
+}
+\end{document}

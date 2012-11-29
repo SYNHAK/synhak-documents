@@ -1,0 +1,19 @@
+\documentclass{synhak-envelope}
+\usepackage{questions}
+\usepackage{setspace}
+
+\begin{document}
+
+\maketitle
+
+Member Dues
+
+\begin{doublespace}
+\Qq{Name:} \Qline{5cm}
+
+\Qq{Amount:} \Qline{5cm}
+
+\Qq{Date:} \Qline{5cm}
+\end{doublespace}
+
+\end{document}

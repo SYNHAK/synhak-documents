@@ -74,4 +74,5 @@ activities.
 \Qq{Printed Name} \Qline{8cm} \Qq{Date} \Qline{2cm}
 \end{spacing}
 
+\StampBox{Filed}
 \end{document}

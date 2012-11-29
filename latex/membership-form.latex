@@ -4,6 +4,7 @@
 \begin{document}
 \title{SYNHAK Membership Application}
 \maketitle
+\StampBox{Recieved}
 
 \emph{This form is not the only step in becoming a member.} Please follow the
 process described at
@@ -14,12 +15,14 @@ http://synhak.org/wiki/Membership. \\
 \Qline{8cm}
 
 \Qq{Why:}
+\StampBox{Approved}
 \begin{doublespace}
 \Qlines{5}
 \end{doublespace}
 
 I, the unersigned, confirm that the information here is true and correct; and I
 promise to be excellent to people.
+
 
 \begin{center}
 \begin{tabularx}{\textwidth} { r l }

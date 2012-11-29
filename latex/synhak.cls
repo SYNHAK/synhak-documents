@@ -45,7 +45,7 @@
 \def \maketitle {%
 \ifcompact
   \begin{tabularx}{\textwidth}{ X X X }
-    \iflogo \includegraphics[width=3cm]{images/logo} \fi & \@title \ifgit & \versioninfo \fi \\
+    \iflogo \includegraphics[width=3cm]{images/logo} \fi & \pbox{5cm}{\@title} \ifgit & \versioninfo \fi \\
   \end{tabularx}
 \else
   \begin{center}

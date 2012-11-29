@@ -19,6 +19,9 @@
 \usepackage{fancyhdr}
 \usepackage[pdftex]{hyperref}
 \usepackage{wasysym}
+\usepackage{pbox}
+\usepackage{fancybox}
+\usepackage{wrapfig}
 \pagestyle{fancy}
 
 \DeclareOption{nologo}
@@ -67,6 +70,11 @@
 \makeatletter
 \def \versioninfo {%
   \GITAbrHash, \GITAuthorDate, \GITAuthorName
+}
+\newcommand{\StampBox}[1]{
+  \begin{wrapfigure}{r}{5cm}
+    \framebox[5cm]{\raisebox{0pt}[2cm]\\{\small #1}}
+  \end{wrapfigure}
 }
 \makeatother
 

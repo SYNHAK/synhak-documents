@@ -1,0 +1,47 @@
+\documentclass{synhak}
+\usepackage{questions}
+
+\begin{document}
+\title{SYNHAK Key Application}
+\maketitle
+\StampBox{Recieved}
+
+\emph{This form is not the only step in acquiring a key to the space.} Please
+follow the process described at
+
+http://synhak.org/wiki/24/7\_access. \\
+
+\Qq{Name:}
+\Qline{8cm}
+
+\Qq{Why:}
+\StampBox{Approved}
+\begin{doublespace}
+  \Qlines{5}
+\end{doublespace}
+
+I, the undersigned, confirm that the information here is true and correct; I
+understand that posession of an entry token to SYNHAK is a direct representation of the
+trust my fellow members hold in me and my promise to be excellent. This token is the property
+of SYNHAK and must be surrendered upon request.
+
+\begin{center}
+\begin{tabularx}{\textwidth} { r l }
+\line(1,0){250} & \line(1,0){100} \\
+Signature & Date
+\end{tabularx}
+\end{center}
+\rule{\linewidth}{0.5mm}
+\begin{center}
+  \emph{Not to be filled out by the applicant}
+\end{center}
+
+\begin{doublespace}
+\begin{tabularx}{\textwidth} { r r }
+\Qq{Key ID:} & \Qline{10cm} \\
+\Qq{Deposit:} & \Qline{10cm} \\
+\Qq{Times Lost:} & \Qline{10cm}
+\end{tabularx}
+\end{doublespace}
+
+\end{document}

@@ -56,7 +56,7 @@
     \includegraphics[width=8cm]{images/logo}\\[1cm]
     The Akron Hackerspace \\
     \ifletterhead
-      \textsc{\small 1456 Riverside Dr, Akron, OH 44310 | http://synhak.org }\\[1cm]
+      \textsc{\small 21 W. North St., Akron, OH 44304 | http://synhak.org }\\[1cm]
     \fi
     \rule{\linewidth}{0.5mm}
   \fi

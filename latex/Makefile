@@ -13,6 +13,7 @@ DOCUMENTS = guest-sign-sheet.pdf \
 						checkout-policy.pdf \
 						dues-envelope.pdf \
 						flyer.pdf \
+						blank-letterhead.pdf \
 
 all: $(DOCUMENTS)
 

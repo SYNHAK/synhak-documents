@@ -1,0 +1,56 @@
+\documentclass[letterhead,nogit]{synhak}
+\usepackage{alltt}
+\usepackage{multicol}
+\begin{document}
+\title{}
+\maketitle
+SYN/HAK provides an environment for people to educate, create, and share amongst
+themselves and
+others within the domains of technology, art and science.
+
+% Copy-pasted from devin's email. Needs fixed indentation :E
+Through talks, classes, workshops, collaborative projects, and other activities, to
+encourage research,
+knowledge exchange, learning, and mentoring in a safe, clean space
+Provide educational spaces for teaching practical skills and theory of technology,
+science, and art.
+Provide work space, storage, and other resources for projects related to art,
+science, and technology
+that will benefit the individual members' personal growth in their fields of
+interest, encouraging the
+individual members to share their projects and knowledge for the betterment of
+society through art,
+science, and technology.
+To create, learn, and teach, individually and as a group, inviting members of the
+community in the
+Akron area and the world.
+To develop, support the development of, and provide resources for the development of
+free and open
+source software and hardware for the benefit of society.
+Collaboration across disciplines for the benefit of cultural, charitable, and
+scientific causes.
+To foster, by all legal means, the common purposes of its participants
+To conduct or engage in all lawful activities in furtherance of the stated purposes
+or those incidental to them.
+
+    We are currently seeking donations of anything they may improve our efforts to
+educate, create, and share to our members and the public.
+
+\begin{multicols}{2}
+\begin{itemize}
+\item Tables
+\item Chairs
+\item Desks
+\item Office equipment
+\item Work benches
+\item Kitchen fixtures and equipment
+\item Cabinets
+\item Tools
+\item Wood working equipment
+\item Metal working equipment
+\item Storage racking and shelves
+\item Electronic tools and equipment
+\end{itemize}
+\end{multicols}
+
+\end{document}

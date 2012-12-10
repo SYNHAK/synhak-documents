@@ -1,0 +1,33 @@
+\documentclass{synhak}
+\begin{document}
+\title{SYNHAK Last Out Procedure}
+\maketitle
+
+\begin{Large}
+Welcome to SYNHAK.  If you are the last one out of the space, please help us out by making sure that all of the following things are taken care of.
+\end{Large}
+
+\begin{itemize}
+\item Ensure that all power tools are off and unplugged.  Some commonly used items that should be checked are:
+\begin{itemize}
+\item The Electronics Lab's soldering station, oscilloscope, power supply, etc
+\item The Tool Room's saws, drills, grinders, welder, etc
+\item Computers, projector, and anything else that consumes power that isn't required to be on at all times
+\end{itemize}
+\item Turn off all lights.  The light switches are as follows:
+\begin{itemize}
+\item Main Shop Lights: On the wall directly adjacent to our main 4' door to the left of the door across the hall
+\item Tool Room Lights: Immediately inside the tool room, on the left
+\item Classroom Lights: First switch is immediately inside the classroom, to the left.  Second switch is in the next room in, on the right.
+\end{itemize}
+\item Ensure that all compressed-gas tanks are turned off.  Propane, oxy-acetylene, MAPP gas, etc
+\item Ensure that all messes that you have made are cleaned up.
+\item Ensure that the classroom is locked, handle and deadbolt.  The key is kept on the orange tool rack next to the pinball machine attached to a large wooden fork.
+\item Ensure that the main shop door is locked.  Press the button and rotate to lock.
+\item Check that all overhead doors throughout the building are closed and secured.
+\item Make sure the lights throughout the rest of the building are off, including the bathroom.
+\item Close and lock whichever door you entered through.
+\item If you are unsure of what to do, ask a Champion.
+\end{itemize}
+
+\end{document}

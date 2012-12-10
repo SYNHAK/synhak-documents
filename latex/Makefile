@@ -16,6 +16,7 @@ DOCUMENTS = guest-sign-sheet.pdf \
 						blank-letterhead.pdf \
 						key-form.pdf \
 						uakron-donation-letter.pdf \
+						last-out-procedure.pdf \
 
 all: $(DOCUMENTS)
 

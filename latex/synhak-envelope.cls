@@ -13,7 +13,7 @@ SYNHAK
 
 21 West North St.
 
-Akron, OH, \ 44310
+Akron, OH, \ 44304
 
 \vspace{1.0in}\large
 

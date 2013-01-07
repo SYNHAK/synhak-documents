@@ -88,6 +88,52 @@ class API(object):
         greetings.append(line[1:].strip())
     return random.choice(greetings)
 
+  def rejectProposal(self, address, subject, reason):
+    params = {}
+    params['subject'] = subject
+    params['greeting'] = self.randomGreeting()
+    params['reason'] = reason
+    template = TemplatePage(self, "Proposals/Template/RejectMail", params)
+    msg = MIMEText(unicode(template))
+    msg['Subject'] = "Your proposal was rejected!"
+    msg['From'] = 'phong@synhak.org <Phong>'
+    msg['To'] = address
+    print "Rejecting proposal '%s': %s"%(subject, reason)
+    if not self._dry:
+      s = smtplib.SMTP('localhost')
+      s.sendmail(msg['From'], address, msg.as_string())
+      s.quit()
+    else:
+      print msg
+
+  def addProposal(self, subject, proposalText, date=None, notifyMails=[]):
+    if date is None:
+      date = datetime.date.today()
+    proposalsPage = self.getPage("Proposals/Open")
+    table,tableEnd = proposalsPage.getWikiText().split("|}", 2)
+    newText = "%s\n|-\n|%s\n|%s|}%s"%(table, date, proposalText, tableEnd)
+    print "Updating [[Proposals/Open]]"
+    if not self._dry:
+      proposalsPage.edit(summary="New proposal added", bot=True, text=newText)
+    else:
+      print newText
+    params = {}
+    params['subject'] = subject
+    params['text'] = proposalText
+    params['greeting'] = self.randomGreeting()
+    mailTemplate = TemplatePage(self, "Proposals/Template/Mail", params)
+    msg = MIMEText(unicode(mailTemplate))
+    msg['Subject'] = 'New Proposal'
+    msg['From'] = 'phong@synhak.org <Phong>'
+    msg['To'] = ', '.join(notifyMails)
+    print "Sending mail to", notifyMails
+    if not self._dry:
+      s = smtplib.SMTP('localhost')
+      s.sendmail(msg['From'], notifyMails, msg.as_string())
+      s.quit()
+    else:
+      print msg
+
   def isThereAMeetingToday(self):
     now = datetime.date.today()
     if now == self.nextMeetingDate():

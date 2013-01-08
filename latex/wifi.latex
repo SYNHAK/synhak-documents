@@ -1,0 +1,16 @@
+\documentclass{synhak}
+\begin{document}
+\title{SYNHAK Wifi}
+\maketitle
+
+\begin{center}
+\begin{Large}
+ESSID: synhak
+
+Password: synhakhak
+
+\includegraphics[width=8cm]{images/wifi-qrcode}
+\end{Large}
+\end{center}
+
+\end{document}

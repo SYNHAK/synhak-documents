@@ -1,0 +1,22 @@
+digraph G {
+    compound=true;
+    node [color=blue];
+    Members -> Board [label="Elect"]
+    Members -> Board [label="Remove"]
+    Members -> SYNHAK [label="Hack"]
+    subgraph cluster_Officers {
+        node [color=green];
+        label=Officers;
+        subgraph cluster_Champions {
+            label=Champions;
+            node [color=red];
+            Champion -> Champion [label="Manage"]
+        }
+        Treasurer -> SYNHAK [label="Fund"]
+        Secretary -> SYNHAK [label="Document"]
+    }
+    Champion -> SYNHAK [label="Manage" lhead=cluster_Champions]
+    Champion -> Board [label="Vote" lhead=cluster_Champions]
+    Board -> Champion [label="Remove" ltail=cluster_Champions]
+    Members -> Treasurer [label="Elect" ltail=cluster_Officers] 
+}

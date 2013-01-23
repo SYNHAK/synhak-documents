@@ -1,0 +1,21 @@
+\documentclass[landscape]{synhak}
+\begin{document}
+\title{}
+\maketitle
+\sffamily
+
+\begin{center}
+\massive{
+Main Space
+
+\vspace{1cm}
+
+$\Rightarrow$
+}
+
+
+\end{center}
+
+\end{document}
+
+

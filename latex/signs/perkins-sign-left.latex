@@ -1,0 +1,20 @@
+\documentclass[landscape]{synhak}
+\begin{document}
+\title{}
+\maketitle
+\sffamily
+
+\begin{center}
+\massive{
+Perkins Room
+
+\vspace{1cm}
+
+$\Leftarrow$
+}
+
+
+\end{center}
+
+\end{document}
+

@@ -1,0 +1,12 @@
+\documentclass[landscape]{synhak}
+\begin{document}
+\title{}
+\maketitle
+\sffamily
+
+\begin{center}
+\massive{Main Space}
+\end{center}
+
+\end{document}
+

@@ -1,6 +1,6 @@
 \ProvidesClass{synhak}
-\LoadClass[11pt,letterpaper,oneside]{article}
 
+\newif\iflandscape
 \newif\iflogo
 \newif\ifcompact
 \newif\ifgit
@@ -10,20 +10,12 @@
 \logotrue
 \compactfalse
 \letterheadfalse
+\landscapefalse
 
-\usepackage{graphicx}
-\usepackage{tabularx}
-\usepackage{forloop}
-\usepackage[cm]{fullpage}
-\usepackage{setspace}
-\usepackage{fancyhdr}
-\usepackage[pdftex]{hyperref}
-\usepackage{wasysym}
-\usepackage{pbox}
-\usepackage{fancybox}
-\usepackage{wrapfig}
-\pagestyle{fancy}
-
+\DeclareOption{landscape}
+    {\landscapetrue}
+\DeclareOption{portrait}
+    {\landscapefalse}
 \DeclareOption{nologo}
     {\logofalse}
 \DeclareOption{logo}
@@ -40,7 +32,31 @@
     {\letterheadtrue}
 \DeclareOption{noletterhead}
     {\letterheadfalse}
+\DeclareOption{nosign}
+    {\signfalse}
+\DeclareOption{sign}
+    {\signtrue}
 \ProcessOptions
+
+\iflandscape
+    \LoadClass[landscape,11pt,letterpaper,oneside]{article}
+\else
+    \LoadClass[11pt,letterpaper,oneside]{article}
+\fi
+
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{forloop}
+\usepackage[cm]{fullpage}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage[pdftex]{hyperref}
+\usepackage{wasysym}
+\usepackage{pbox}
+\usepackage{fancybox}
+\usepackage{wrapfig}
+\usepackage{lmodern}
+\pagestyle{fancy}
 
 \input {\jobname.version.latex}
 
@@ -65,6 +81,11 @@
   \end{center}
 \fi
 }
+\def \massive {%
+\fontsize{5cm}{1em}
+\selectfont
+}
+
 \makeatother
 
 \makeatletter

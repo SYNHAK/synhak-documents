@@ -1,0 +1,18 @@
+\documentclass[landscape]{synhak}
+\begin{document}
+\title{}
+\maketitle
+\sffamily
+
+\begin{center}
+\massive{
+Welcome to
+
+SYNHAK!
+}
+
+\end{center}
+
+\end{document}
+
+

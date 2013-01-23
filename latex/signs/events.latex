@@ -1,0 +1,17 @@
+\documentclass[landscape,nologo]{synhak}
+\begin{document}
+\title{}
+\maketitle
+\sffamily
+
+\begin{center}
+\fontsize{3cm}{1em}
+\selectfont
+Upcoming Events:
+
+\end{center}
+
+\end{document}
+
+
+

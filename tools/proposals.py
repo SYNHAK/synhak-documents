@@ -33,8 +33,8 @@ if options.read_mail:
     for mail in subprocess.check_output(["/usr/lib/mailman/bin/list_members", mailmanList]).split("\n"):
       whitelist.append(mail.strip())
 
-  fromAddr = parseaddr(msg.get('From'))[1]
+  fromName, fromAddr = parseaddr(msg.get('From'))
   if fromAddr in whitelist or len(whitelist) == 0:
-    api.addProposal(msg.get('Subject'), proposalText, notifyMails=options.mail_addresses)
+    api.addProposal(msg.get('Subject'), proposalText, fromName, fromAddr, notifyMails=options.mail_addresses)
   else:
     api.rejectProposal(fromAddr, msg.get('Subject'), "You must be a member of SYNHAK.")

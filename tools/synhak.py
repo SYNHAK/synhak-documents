@@ -106,7 +106,7 @@ class API(object):
     else:
       print msg
 
-  def addProposal(self, subject, proposalText, date=None, notifyMails=[]):
+  def addProposal(self, subject, proposalText, fromName, fromAddr, date=None, notifyMails=[]):
     if date is None:
       date = datetime.date.today()
     proposalsPage = self.getPage("Proposals/Open")
@@ -121,6 +121,8 @@ class API(object):
     params['subject'] = subject
     params['text'] = proposalText
     params['greeting'] = self.randomGreeting()
+    params['fromAddr'] = fromAddr
+    params['fromName'] = fromName
     mailTemplate = TemplatePage(self, "Proposals/Template/Mail", params)
     msg = MIMEText(unicode(mailTemplate))
     msg['Subject'] = 'New Proposal'

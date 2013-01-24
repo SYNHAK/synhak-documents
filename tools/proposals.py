@@ -30,7 +30,7 @@ if options.read_mail:
 
   whitelist = []
   for mailmanList in options.mailman_lists:
-    for mail in subprocess.check_output(["/usr/lib/mailman/bin/list_members", mailmanList]).split("\n"):
+    for mail in subprocess.Popen(["/usr/lib/mailman/bin/list_members", mailmanList], stdout=subprocess.PIPE).communicate()[0].split("\n"):
       whitelist.append(mail.strip())
 
   fromName, fromAddr = parseaddr(msg.get('From'))

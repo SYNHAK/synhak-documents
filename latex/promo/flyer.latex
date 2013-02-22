@@ -1,0 +1,41 @@
+\documentclass{beamer}
+\usepackage{pdfpages}
+\usepackage{pgfpages}
+\usepackage{forloop}
+\pgfpagesuselayout{4 on 1}
+\newcounter{pagenum}
+\usepackage{beamerarticle}
+\usetheme{default}
+\setbeamertemplate{navigation symbols}{}
+\begin{document}
+\pdfpageattr{/Rotate 90}
+\forloop{pagenum}{1}{\value{pagenum} < 5}{
+\begin{frame}{}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\begin{center}
+\includegraphics[width=6cm]{images/logo}
+
+The Akron Hackerspace
+
+Meetings: 7-8 PM, every Tuesday
+
+{\bf Please check our website for daily open hours}
+\end{center}
+\end{column}
+\begin{column}{0.5\textwidth}
+We are a not-for-profit infrastructure provider for people who want to make things. \\
+Whether it be works of art, prototyping an invention, starting a small business, or simply
+working on a hobby. We provide the place, the needed tools, the necessary
+knowledge, and networking opportunities for our members. In addition, We offer free public
+workshops twice a month on various subjects.
+\end{column}
+\end{columns}
+
+\begin{center}
+http://synhak.org/ :: 21 W. North St. Akron, Ohio 44310 \\
+@synhak :: irc://chat.freenode.net/synhak :: discuss@synhak.org
+\end{center}
+\end{frame}
+}
+\end{document}

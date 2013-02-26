@@ -5,7 +5,9 @@
 \newif\ifcompact
 \newif\ifgit
 \newif\ifletterhead
+\newif\ifgitauthor
 
+\gitauthortrue
 \gittrue
 \logotrue
 \compactfalse
@@ -28,6 +30,10 @@
     {\gittrue}
 \DeclareOption{nogit}
     {\gitfalse}
+\DeclareOption{gitauthor}
+    {\gitauthortrue}
+\DeclareOption{nogitauthor}
+    {\gitauthorfalse}
 \DeclareOption{letterhead}
     {\letterheadtrue}
 \DeclareOption{noletterhead}
@@ -90,7 +96,11 @@
 
 \makeatletter
 \def \versioninfo {%
+\ifgitauthor
   \GITAbrHash, \GITAuthorDate, \GITAuthorName
+\else
+  \GITAbrHash, \GITAuthorDate
+\fi
 }
 \newcommand{\StampBox}[1]{
   \begin{wrapfigure}{r}{5cm}

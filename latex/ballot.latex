@@ -1,0 +1,52 @@
+\documentclass[nogitauthor]{synhak}
+\usepackage{questions}
+
+\newcommand{\votes}[1]{\QO0\forloop{qr}{1}{\value{qr} < #1}{---\QO\arabic{qr}}}
+
+\begin{document}
+\title{SYNHAK 2013 Ballot}
+\maketitle
+\setlength{\parindent}{0cm}
+
+\section{Board}
+There are 5 (five) positions open.
+
+\begin{tabularx}{\textwidth}{ r | l }
+\votes{6} & Dan Swick \\
+\votes{6} & Andrew Leitholf \\
+\votes{6} & Gaurev "G" Saxena \\
+\votes{6} & Alexander Golightley \\
+\votes{6} & Devin Wolfe \\
+\end{tabularx}
+
+\section{Champion}
+There are 3 (three) positions open.
+
+\begin{tabularx}{\textwidth}{ r | l }
+\votes{3} & Trever Fischer \\
+\votes{3} & Chris Egeland
+\end{tabularx}
+
+\section{Treasurer}
+There is 1 (one) position open.
+
+\begin{tabularx}{\textwidth}{ r | l }
+\votes{2} & Alexander Golightley
+\end{tabularx}
+
+\section{Secretary}
+There is 1 (one) position open.
+
+\begin{tabularx}{\textwidth}{ r | l }
+\votes{2} & Andrew Leitholf
+\end{tabularx}
+
+\section{Sysadmin}
+There is 1 (one) position open.
+
+\begin{tabularx}{\textwidth}{ r | l }
+\votes{3} & Chris Egeland \\
+\votes{3} & Craig Bergdorf
+\end{tabularx}
+
+\end{document}

@@ -18,6 +18,7 @@ DOCUMENTS = guest-sign-sheet.pdf \
 						key-form.pdf \
 						uakron-donation-letter.pdf \
 						last-out-procedure.pdf \
+						ballot.pdf \
 						signs/perkins-sign-left.pdf \
 						signs/perkins-sign.pdf \
 						signs/main-room-right.pdf \

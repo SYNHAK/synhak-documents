@@ -324,7 +324,7 @@ class Meeting(page.Page):
   @staticmethod
   def formatMeetingDate(date):
     assert isinstance(date, datetime.date)
-    return "%d-%d-%d"%(date.day, date.month, date.year)
+    return "%d-%d-%d"%(date.year, date.month, date.day)
 
   def __init__(self, api, date, *args, **kwargs):
     self._date = date

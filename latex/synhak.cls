@@ -92,6 +92,11 @@
 \selectfont
 }
 
+\def \enormous {%
+\fontsize{3cm}{1em}
+\selectfont
+}
+
 \makeatother
 
 \makeatletter

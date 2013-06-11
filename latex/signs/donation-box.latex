@@ -1,0 +1,17 @@
+\documentclass[landscape]{synhak}
+\begin{document}
+\title{}
+\maketitle
+\sffamily
+
+\begin{center}
+\enormous{
+    Donate to buy us a 3d printer!
+
+    Target: \$800
+}
+
+\end{center}
+
+\end{document}
+

@@ -1,0 +1,16 @@
+\documentclass[landscape]{synhak}
+\begin{document}
+\title{}
+\maketitle
+\sffamily
+
+\begin{center}
+\massive{
+    Community Board
+}
+
+
+\end{center}
+
+\end{document}
+

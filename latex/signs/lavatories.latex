@@ -1,0 +1,16 @@
+\documentclass[landscape]{synhak}
+\begin{document}
+\title{}
+\maketitle
+\sffamily
+
+\begin{center}
+\massive{
+Lavatories
+}
+
+
+\end{center}
+
+\end{document}
+

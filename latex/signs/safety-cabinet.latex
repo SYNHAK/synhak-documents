@@ -1,0 +1,15 @@
+\documentclass[landscape]{synhak}
+\begin{document}
+\title{}
+\maketitle
+\sffamily
+
+\begin{center}
+\enormous{
+    The Big Cabinet of Safety
+}
+
+\end{center}
+
+\end{document}
+

@@ -25,7 +25,7 @@ class API(object):
 
   def nextMeetingDate(self):
     stamp = map(int, self.getPage("Next Meeting", followRedir=False).getWikiText().split("/")[1].replace("]", "").split("-"))
-    nextDate = datetime.date(stamp[2], stamp[1], stamp[0])
+    nextDate = datetime.date(stamp[0], stamp[1], stamp[2])
     now = datetime.date.today()
     if now > nextDate:
       nextDate = nextDate+datetime.timedelta(days=7)
@@ -343,7 +343,7 @@ class Meeting(page.Page):
 
   def nextMeeting(self):
     if self.alreadyExists() and 'next' in self.meta().params:
-      (day, month, year) = map(int,
+      (year, month, day) = map(int,
           self.meta().params['next'].split('/')[1].split('-'))
       stamp = datetime.date(day=day, month=month, year=year)
       return self._api.getMeeting(stamp)
@@ -351,7 +351,7 @@ class Meeting(page.Page):
 
   def previousMeeting(self):
     if self.alreadyExists() and 'previous' in self.meta().params:
-      (day, month, year) = map(int,
+      (year, month, day) = map(int,
           self.meta().params['previous'].split('/')[1].split('-'))
       stamp = datetime.date(day=day, month=month, year=year)
       return self._api.getMeeting(stamp)

@@ -5,7 +5,6 @@
 \usepackage{ragged2e}
 \pgfpagesuselayout{4 on 1}
 \newcounter{pagenum}
-\usepackage{beamerarticle}
 \usetheme{default}
 \setbeamertemplate{navigation symbols}{}
 \begin{document}

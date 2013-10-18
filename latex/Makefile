@@ -25,6 +25,7 @@ DOCUMENTS = guest-sign-sheet.pdf \
 						signs/welcome.pdf \
 						signs/events.pdf \
 						promo/flyer.pdf \
+						wifi.pdf \
 
 all: $(DOCUMENTS)
 

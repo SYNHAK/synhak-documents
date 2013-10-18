@@ -4,13 +4,15 @@
 \maketitle
 
 \begin{center}
-\begin{Large}
+
+\fontsize{2cm}{1em}
+\selectfont
+\sffamily
 ESSID: synhak
 
 Password: synhakhak
 
 \includegraphics[width=8cm]{images/wifi-qrcode}
-\end{Large}
 \end{center}
 
 \end{document}

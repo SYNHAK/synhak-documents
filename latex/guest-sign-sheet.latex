@@ -1,17 +1,22 @@
 \documentclass{synhak}
+\usepackage{questions}
 \newcounter{row}
 
 \begin{document}
-\title{SYNHAK Guest Sign-in}
+\title{SYNHAK Mailing List Signup}
 \maketitle
 
 \begin{center}
+  SYNHAK has a number of mailing lists to keep our community informed. Add your
+  name and e-mail below to be signed up for discuss@synhak.org and/or
+  announce@synhak.org. For more information, check
+  http://synhak.org/wiki/Mailing\_Lists
 \begin{doublespace}
 \begin{tabularx}{\textwidth}{ |X|X|X|X| }
 \hline
-Date & Name & Email & Emergency Phone \\ \hline
-\forloop{row}{1}{\value{row} < 15}{  &   &   &   \\ \hline }
- & & & \\ \hline
+Date & Name & Email & announce@ Only \\ \hline
+\forloop{row}{1}{\value{row} < 15}{  &   &   & \QO \\ \hline }
+& & & \QO \\ \hline
 \end{tabularx}
 \end{doublespace}
 \end{center}

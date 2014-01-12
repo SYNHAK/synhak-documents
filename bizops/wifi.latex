@@ -12,7 +12,7 @@ ESSID: synhak
 
 Password: synhakhak
 
-\includegraphics[width=8cm]{images/wifi-qrcode}
+\includegraphics[width=8cm]{../common/wifi-qrcode}
 \end{center}
 
 \end{document}

@@ -7,7 +7,7 @@
 \pagestyle{empty}
 
 \def \maketitle {%
-\includegraphics[width=3cm]{images/logo}
+\includegraphics[width=3cm]{../impress/logo/logo}
 
 SYNHAK
 

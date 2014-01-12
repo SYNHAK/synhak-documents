@@ -70,12 +70,12 @@
 \def \maketitle {%
 \ifcompact
   \begin{tabularx}{\textwidth}{ X X X }
-    \iflogo \includegraphics[width=3cm]{images/logo} \fi & \pbox{5cm}{\@title} \ifgit & \versioninfo \fi \\
+    \iflogo \includegraphics[width=3cm]{../impress/logo/logo} \fi & \pbox{5cm}{\@title} \ifgit & \versioninfo \fi \\
   \end{tabularx}
 \else
   \begin{center}
   \iflogo
-    \includegraphics[width=8cm]{images/logo}\\[1cm]
+    \includegraphics[width=8cm]{../impress/logo/logo}\\[1cm]
     The Akron Hackerspace \\
     \ifletterhead
       \textsc{\small 21 W. North St., Akron, OH 44304 | http://synhak.org }\\[1cm]

@@ -23,7 +23,7 @@ $(SUBCLEAN): %.clean:
 %.pdf: %.svg
 		inkscape -z -T -A $@ $<
 
-%.pdf: %.latex %.version.latex $(ROOT)/common/synhak.cls
+%.pdf: %.latex %.version.latex $(ROOT)/common/synhak.cls $(ROOT)/impress/logo/logo.pdf
 		cd $(dir $<) && TEXINPUTS=${TEXINPUTS} pdflatex -output-format=pdf $(notdir $<) </dev/null
 
 %.version.latex: ../.git/logs/HEAD

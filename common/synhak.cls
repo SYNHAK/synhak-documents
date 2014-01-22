@@ -78,7 +78,7 @@
     \includegraphics[width=8cm]{../impress/logo/logo}\\[1cm]
     The Akron Hackerspace \\
     \ifletterhead
-      \textsc{\small 21 W. North St., Akron, OH 44304 | http://synhak.org }\\[1cm]
+      \textsc{\small 48 S. Summit St., Akron, OH 44308 | http://synhak.org }\\[1cm]
     \fi
     \rule{\linewidth}{0.5mm}
   \fi

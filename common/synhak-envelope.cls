@@ -11,9 +11,9 @@
 
 SYNHAK
 
-21 West North St.
+48 S. Summit St.
 
-Akron, OH, \ 44304
+Akron, OH, \ 44308
 
 \vspace{1.0in}\large
 

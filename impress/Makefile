@@ -1,4 +1,4 @@
 DOCUMENTS = \
-	floorplan-21w-north.pdf
+	flyer.pdf
 
 include ../Makefile

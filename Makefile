@@ -1,4 +1,7 @@
+noop=
+space = $(noop) $(noop)
 SUBDIRS:=$(dir ${shell find -mindepth 2 -name Makefile -print})
+IGNORE=*.aux *.log *.out *.nav *.snm *.toc
 SUBCLEAN=$(addsuffix .clean,$(SUBDIRS))
 DOCCLEAN=$(addsuffix .clean,$(DOCUMENTS))
 EXTRACLEAN=*.version.latex.clean $(addsuffix .clean,$(CLEANUP))
@@ -7,7 +10,7 @@ TEXINPUTS:=.:$(PWD):$(TEXINPUTS):$(ROOT)/common/
 
 .PHONY: all $(SUBDIRS) clean $(SUBCLEAN) $(CLEANUP) $(DOCCLEAN)
 
-all: $(DOCUMENTS) $(SUBDIRS)
+all: $(DOCUMENTS) $(SUBDIRS) .gitignore
 
 clean: $(SUBCLEAN) $(DOCCLEAN) $(EXTRACLEAN)
 
@@ -38,3 +41,7 @@ $(SUBCLEAN): %.clean:
 
 %.png: .svg
 	inkscape -e $@ $<
+
+.gitignore: Makefile
+	echo -e "$(subst ${space},\n,${DOCUMENTS})" > .gitignore
+	echo -e "$(subst ${space},\n,${IGNORE})" >> .gitignore

@@ -13,7 +13,7 @@
 \forloop{pagenum}{1}{\value{pagenum} < 3}{
 
 \begin{center}
-\includegraphics[width=8cm]{images/logo}
+\includegraphics[width=8cm]{logo/logo}
 
 http://synhak.org/
 

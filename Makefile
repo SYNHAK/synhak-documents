@@ -1,6 +1,9 @@
 # This Makefile generates documents from source files. Its pretty neat, but
 # could be a bit hard to understand at first.
-
+#
+# Check out the full pipeline at:
+# 	https://synhak.org/wiki/Documents
+#
 # To use it, simply define DOCUMENTS as a list of documents that we want
 # generated, and include it:
 #

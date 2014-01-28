@@ -20,3 +20,11 @@ documents, etc for SYNHAK. It is organized roughly according to function:
 * signage/ - Various signs that are posted around the space.
 
 * tools/ - Useful things, like a blueprint of the space
+
+If you're curious to see how they're generated, have a look at our wiki page:
+
+    https://synhak.org/wiki/Documents
+
+The source repo for this is also insightful:
+
+    http://github.com/SYNHAK/synhak-documents

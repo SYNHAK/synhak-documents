@@ -1,49 +1,41 @@
-\documentclass{article}
-\usepackage[margin=0.5in,landscape]{geometry}
-\usepackage{multicol}
-\usepackage{setspace}
+\documentclass{beamer}
+\usepackage{pdfpages}
 \usepackage{pgfpages}
 \usepackage{forloop}
-\pgfpagesuselayout{2 on 1}[letterpaper]
-\pagestyle{empty}
+\usepackage{ragged2e}
+\pgfpagesuselayout{4 on 1}
 \newcounter{pagenum}
-
+\usetheme{default}
+\setbeamertemplate{navigation symbols}{}
 \begin{document}
+\pdfpageattr{/Rotate 90}
+\forloop{pagenum}{1}{\value{pagenum} < 5}{
+\begin{frame}{}
+\begin{columns}[T]
+\begin{column}{0.5\textwidth}
+\begin{center}
+\includegraphics[width=6cm]{logo/logo}
 
-\forloop{pagenum}{1}{\value{pagenum} < 3}{
+The Akron Hackerspace
+
+Meetings: 7-8 PM, every Tuesday
+
+{\bf Please check our website for daily open hours}
+\end{center}
+\end{column}
+\begin{column}{0.5\textwidth}
+We are a not-for-profit infrastructure provider for people who want to make things. \\
+Whether it be works of art, prototyping an invention, starting a small business, or simply
+working on a hobby. We provide the place, the needed tools, the necessary
+knowledge, and networking opportunities for our members. In addition, We offer free public
+workshops twice a month on various subjects.
+\end{column}
+\end{columns}
 
 \begin{center}
-\includegraphics[width=8cm]{logo/logo}
-
-http://synhak.org/
-
-{\LARGE
-We are a not-for-profit infrastructure provider for people who want to make things. Whether it
-be works of art, prototyping an invention, starting a small business, or simply
-working on a hobby. We provide the place, the needed tools, the necessary
-knowledge, and networking opportunities for our members. We offer free public
-workshops twice a month on subjects such as:
-
-\begin{multicols}{2}
-\begin{enumerate}
-\item Beer Brewing
-\item Wood Working
-\item Basic and Advanced Electronics
-\item Plastic Fabrication
-\item Welding and Metal Working
-\item Sewing and Crafts
-\item Software Engineering
-\item Artwork
-\item Space Exploration
-\item Community Outreach
-\end{enumerate}
-\end{multicols}
-
-\textbf{Join us for our Open House and Grand Opening at our new location}
-
-21 W. North St. Akron, Ohio, 44304
-}
+http://synhak.org/ :: 48 S. Summit St. Akron, Ohio 44308 \\
+@synhak :: irc://chat.freenode.net/synhak :: discuss@synhak.org
 \end{center}
-\newpage
+\end{frame}
 }
 \end{document}

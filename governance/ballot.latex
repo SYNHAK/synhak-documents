@@ -1,5 +1,6 @@
 \documentclass[nogitauthor]{synhak}
 \usepackage{questions,multicol}
+\fancyhead{}
 
 \newcommand{\votes}{\QO\hspace{5mm}}
 

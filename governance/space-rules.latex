@@ -1,10 +1,16 @@
 \documentclass{synhak}
+\setlength\parindent{0pt}
 \begin{document}
 \title{SYNHAK Space Rules}
 \maketitle
 
 \begin{Large}
-Welcome to SYNHAK.
+Welcome to SYNHAK. We are a community governed by Consensus, Excellence, and
+Do-ocracy. For more information about what that means, see:
+
+\begin{center}
+https://synhak.org/wiki/The\_Idea
+\end{center}
 
 You are at:
 \begin{center}
@@ -15,6 +21,9 @@ Akron, Ohio
 44308
 \end{center}
 
+The following rules were consensed upon in Ye Age of Myth and have remained
+since:
+
 \begin{enumerate}
 \item Be excellent to each other.
 \item Wear proper safety equipment.
@@ -23,6 +32,13 @@ Akron, Ohio
 \item If it is not yours, don't break it.
 \item If its broken, fix it.
 \end{enumerate}
+
+SYNHAK is a diverse community! Please be familiar with our Community Standards:
+\\
+\\
+\begin{center}
+https://synhak.org/wiki/Community\_Standards
+\end{center}
 \end{Large}
 
 \end{document}

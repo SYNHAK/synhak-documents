@@ -9,7 +9,8 @@ DOCUMENTS = \
 	perkins-sign.pdf \
 	perkins-sign-left.pdf \
 	safety-cabinet.pdf \
-	welcome.pdf
+	welcome.pdf \
+	what-we-are.pdf
 
 CLEANUP=*.log *.aux *.out
 

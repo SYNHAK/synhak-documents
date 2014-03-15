@@ -1,0 +1,44 @@
+\documentclass{beamer}
+\usepackage{pdfpages}
+\usepackage{pgfpages}
+\usepackage{forloop}
+\usepackage{graphicx}
+\usepackage{ocr}
+\usepackage{questions}
+\usepackage{ragged2e}
+
+\newcounter{pagenum}
+\newcounter{rownum}
+\pgfpagesuselayout{4 on 1}
+\usetheme{default}
+\setbeamertemplate{navigationsymbols}{}
+
+\begin{document}
+\forloop{pagenum}{1}{\value{pagenum} < 5}{
+  \begin{frame}{}
+    \forloop{rownum}{1}{\value{rownum} < 5}{
+      \ocrfamily
+      \begin{center}
+        \bf \Large DO NOT HACK
+      \end{center}
+
+      \begin{columns}[T]
+        \begin{column}{0.25\textwidth}
+
+          \Qq{Name:}
+          \vspace{0.25cm}
+
+          \Qq{Contact:}
+        \end{column}
+        \begin{column}{0.75\textwidth}
+
+          \Qline{7cm}
+          \vspace{0.25cm}
+
+          \Qline{7cm}
+        \end{column}
+      \end{columns}
+    }
+  \end{frame}
+}
+\end{document}

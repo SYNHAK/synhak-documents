@@ -50,6 +50,8 @@
     \LoadClass[11pt,letterpaper,oneside]{article}
 \fi
 
+\usepackage{ocr}
+\usepackage[sfdefault,condensed]{cabin}
 \usepackage{graphicx}
 \usepackage{tabularx}
 \usepackage{forloop}
@@ -119,6 +121,6 @@
 \ifcompact
 \else
 \makeatletter
-\ifgit \fancyfoot[C]{\versioninfo} \fi
+\ifgit \fancyfoot[C]{\ocrfamily\versioninfo} \fi
 \makeatother
 \fi

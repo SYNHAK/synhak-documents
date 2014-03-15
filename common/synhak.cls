@@ -6,6 +6,7 @@
 \newif\ifgit
 \newif\ifletterhead
 \newif\ifgitauthor
+\newif\ifsign
 
 \gitauthortrue
 \gittrue
@@ -13,6 +14,7 @@
 \compactfalse
 \letterheadfalse
 \landscapefalse
+\signfalse
 
 \DeclareOption{landscape}
     {\landscapetrue}
@@ -51,6 +53,7 @@
 \fi
 
 \usepackage{ocr}
+\usepackage{anyfontsize}
 \usepackage[sfdefault,condensed]{cabin}
 \usepackage{graphicx}
 \usepackage{tabularx}

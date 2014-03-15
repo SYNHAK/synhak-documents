@@ -1,0 +1,30 @@
+\documentclass[compact]{synhak}
+\setlength\parindent{0pt}
+\begin{document}
+\title{}
+\maketitle
+
+\begin{center}
+  \fontsize{1cm}{0.95cm}\selectfont
+  SYNHAK is an infrastructure provider for people who want to make things.
+\end{center}
+\fontsize{0.75cm}{0.95cm}\selectfont
+    SYNHAK provides space, tools, and infrastructure to help others learn new
+    skills and create cool things. SYNHAK exists through and depends on
+    membership dues, donations and the hard work of individuals such as
+    ourselves. Our code of conduct is \textbf{"Be excellent to each other."} We exist as
+    a free public resource. If you have an idea that needs realized, it can
+    happen at SYNHAK.\\
+\\
+    We have 4,030 square feet of space. It is filled with an Electronics Lab,
+    Machine Shop, Computer Lab, Workshop and a Kitchen. Everyone is welcome to
+    use our resources. In addition to space, we have a vibrant community of
+    makers, hackers, and builders who are just itching to share their knowledge
+    with the world. The Speakers Bureau runs classes twice a month on diverse
+    topics.\\
+\\
+    SYNHAK's hours vary from week to week, though the weekly meeting is every
+    \textbf{Tuesday at 7:00 PM}. Meetings are open to the public and act as the community
+    forum for individuals to discuss local happenings, their projects, and our
+    self-governance mechanisms.
+\end{document}

@@ -24,7 +24,6 @@ Quantity & Item & Spiff ID & Serial Number & Approximate Value & Returned Date \
 I understand that a copy of this form will be kept with my membership records at
 SYNHAK. This also certifies that I have been issued a copy of the equipment
 checkout policy and agreed to the terms within.
-\StampBox{Filed}
 
 
 \Qq{Members's Signature} \Qline{8cm}
@@ -37,5 +36,6 @@ checkout policy and agreed to the terms within.
 
 \Qq{Return Date} \Qline{3cm}
 \end{doublespace}
+\StampBox{Filed}
 
 \end{document}

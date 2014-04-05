@@ -1,4 +1,4 @@
-\documentclass{synhak}
+\documentclass[compact]{synhak}
 \usepackage{questions}
 
 \begin{document}
@@ -32,7 +32,6 @@ processing costs.
 \item If your SYNHAK membership is terminated or suspended at any time, any and
 all checked out equipment must be returned immediately.
 \end{enumerate}
-\StampBox{Filed}
 
 I, \Qline{8cm}, have fully read and understand the above terms and conditions. I
 fully assume all risks and responsibilities associated with use of the equipment.
@@ -42,5 +41,6 @@ fully assume all risks and responsibilities associated with use of the equipment
 
 \Qq{Printed Name} \Qline{8cm} \Qq{Date} \Qline{2cm}
 \end{spacing}
+\StampBox{Filed}
 
 \end{document}

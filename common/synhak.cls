@@ -113,11 +113,8 @@
 \fi
 }
 \newcommand{\StampBox}[1]{
-  \begin{wrapfigure}{r}{5cm}
-    \vspace{-20pt}
-    \framebox[4.5cm]{\raisebox{0pt}[2cm]\\{\small #1}}
-    \vspace{-20pt}
-  \end{wrapfigure}
+    \setlength{\fboxsep}{0.5cm}
+    \framebox[4.5cm]{\raisebox{-1.5cm}{\small #1}}
 }
 \makeatother
 

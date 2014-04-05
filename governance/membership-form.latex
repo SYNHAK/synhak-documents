@@ -1,21 +1,18 @@
-\documentclass{synhak}
+\documentclass[compact]{synhak}
 \usepackage{questions}
 
 \begin{document}
 \title{SYNHAK Membership Application}
 \maketitle
-\StampBox{Recieved}
 
 \emph{This form is not the only step in becoming a member.} Please follow the
-process described at
-
-http://synhak.org/wiki/Membership. \\
-
-\Qq{Name:}
+process described at http://synhak.org/wiki/Membership \\
+ \\
+ \\
+\Qq{Printed Name:}
 \Qline{8cm}
 
-\Qq{Why:}
-\StampBox{Approved}
+\Qq{Why do you wish to become a member of SYNHAK:}
 \begin{doublespace}
 \Qlines{5}
 \end{doublespace}
@@ -35,19 +32,27 @@ Email & Phone Number
 \end{center}
 \rule{\linewidth}{0.5mm}
 \begin{center}
-\emph{Not to be filled out by the applicant}
+\emph{The below section is not to be filled out by the applicant}
 \end{center}
 
 \begin{doublespace}
+
 \begin{tabularx}{\textwidth} { r r }
 \Qq{Sponsor 1 Signature:} & \Qline{10cm} \\
+\Qq{Sponsor 1 Printed Name:} & \Qline{10cm} \\
 \Qq{Phone/Email:} & \Qline{10cm} \\
 \Qq{Sponsor 2 Signature:} & \Qline{10cm} \\
+\Qq{Sponsor 2 Printed Name:} & \Qline{10cm} \\
 \Qq{Phone/Email:} & \Qline{10cm} \\
 \end{tabularx}
-\rule{\linewidth}{0.5mm} \\
-\Qq{Dues paid:} \Qline{10cm}, \Qq{started on} \Qline{3cm}
 \end{doublespace}
+\begin{center}
+\StampBox{Recieved}
+\StampBox{Announced}
+\StampBox{Approved}
+\end{center}
+\rule{\linewidth}{0.5mm} \\
+
 
 
 \end{document}
